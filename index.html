@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="profile.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title> pravallika Resume</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">MY RESUME</h2>
+    <div class="upper"><img src="pravallik.jpg" alt="Image">
+        <ul>
+            <li>Name - PRAVALLIKA THATI</li>
+            <li>Enrollment Number -xxxxxxxxC0</li>
+            <li>Branch - B.Tech</li>
+            <li>Department -C.S.E</li>
+            <li>Section - B</li>
+            <li>Phone Number - 8967452301</li>
+            <li>Mail Id - <small>thatipravallika46@gmail.com</small></li>
+            <li>Address - guntur.</li>
+        </ul>
+    </div>
+    <br>
+    <h2 class="heading">Education Details & Qualifications</h2>
+    <div class="education">
+        <table>
+            <tbody>
+                <tr class="fix">
+                    <th>Serial No.</th>
+                    <th> Standard</th>
+                    <th>Percent/ CGPA</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>10th</td>
+                    <td>10.0</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>INTERMEDIATE</td>
+                    <td>98%</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>B-TECH</td>
+                    <td>PERSUING</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2 class="heading">Skills</h2>
+    <h3>Programming Languages</h3>
+    <div class="skills">
+        <ul>
+            <li>Programming in C </li>
+            <li>python programming</li>
+            <li>learing c++</li>
+            <li>HTML </li>
+            <li>CSS  </li>
+        </ul>
+    </div>
+    <h3 class="heading">About</h3>
+    <p> I have well knowledge in programming languages like python,c++,c have also learnt html,css in the training session conducted by our college management and i also received a certificate as a python game developer.I am active in participating code challenges like code chef,hackerrank,etc..,conducted by our college management.</p>
+</div>
+</body>
+</html>
+<style>
+
+ {  padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body::after{
+    content: "";
+    background: radial-gradient(#ff0, rgb(255, 0, 255));
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    clip-path: circle(30% at right 0%);
+}
+body::before{
+    content: "";
+    background: radial-gradient(#0ff, #fff);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    clip-path: circle(20% at left 90%);
+}
+.container{
+    background: #ffffff62;
+    box-shadow: 0 0 0.5rem 0.5rem rgba(16, 27, 192, 0.37);
+    backdrop-filter: blur( 5.5px );
+    border-radius: 0.7rem;
+    border: solid #000;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.heading{
+    text-align: center;
+    text-decoration: underline;
+}
+.upper{
+    margin: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+.upper img{
+    width: 8rem;
+    border-radius: 0.2rem;
+    border: solid 0.1rem;
+    box-shadow: 0 0.2rem 0.5rem 0.1rem #00000075;
+}
+.upper ul{
+    margin-inline: 1rem;
+    list-style-type: none;
+    font-weight: bold;
+}
+.education{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.education table{
+    width: 90%;
+    padding: 0.5rem;
+}
+.education table tr{
+    transition: all 0.2s;
+}
+.education .fix:hover{
+    transform: none;
+    background: none;
+}
+.education table tr:hover{
+    transform: scale(1.1);
+    background: #0000003f;
+    cursor: pointer;
+}
+.education table{
+    border: solid;
+    border-radius: 0.3rem;
+}
+.education table td, .education table th{
+    border: solid 0.1rem #918383;
+    text-align: center;
+    padding-block: 0.5rem;
+    border-radius: 0.3rem;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+.skills ul{
+    list-style-type: none;
+}
+.skills ul li{
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background:#b9ecec;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .2s;
+    border: solid transparent 0.1rem;
+}
+.skills ul li:hover{
+    transform: scale(1.2);
+    transition: all .2s;
+    z-index: 2;
+    border: solid 0.1rem #6d7e7e;
+}
+.certs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.certs ul{
+    list-style-type: none;
+}
+.certs ul li{
+    display: inline-block;
+    margin: 0.2rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+.certs ul li:hover{
+    transform: scale(1.2);
+    transition: all .2s;
+    z-index: 2;
+}
+.certs ul li img{
+    width: 25rem;
+    border-radius: 0.5rem;
+}
+@media screen and (max-width:448px) {
+    .upper ul{
+        font-size: small;
+        font-weight: bold;
+    }
+    .certs ul li img{
+        width: 20rem;
+        border-radius: 0.5rem;
+    }
+}
+
+</style>
